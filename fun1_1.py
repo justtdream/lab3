@@ -1,9 +1,10 @@
 def is_prime(n):
+    n = int(n)
     if n < 2:
         return False
-    for i in range (2, int(n**0.5) +1):
+    for i in range(2, n):
         if n%i == 0:
-            return False 
+            return False
     return True
 
 def filter_prime(inputList):
