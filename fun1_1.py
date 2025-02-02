@@ -1,14 +1,13 @@
-def filter (n):
+def is_prime(n):
     if n < 2:
         return False
-    for i in range (2, int(n**0.5) +1):
-        if n%i == 0:
-            return False 
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
     return True
-n = num
-answer1 = filter (n)
-print (answer1)
 
-num = input()
-list = num.split()
-print (list)
+def filter_prime(numbers):
+    return [n for n in numbers if is_prime(n)]
+
+print(filter_prime(map(int, input().split())))
+
