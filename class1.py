@@ -1,4 +1,4 @@
-class MyClass:
+class firstclass:
     def __init__(self):
         self.text = ""  
 
@@ -8,6 +8,6 @@ class MyClass:
     def print_string(self):
         print(self.text.upper())  
 
-obj = MyClass()
+obj = firstclass()
 obj.get_string()  
 obj.print_string()
