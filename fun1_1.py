@@ -1,4 +1,4 @@
-def is_prime(n):
+def sort_prime(n):
     if n < 2:
         return False
     for i in range(2, int(n**0.5) + 1):
@@ -7,7 +7,7 @@ def is_prime(n):
     return True
 
 def filter_prime(numbers):
-    return [n for n in numbers if is_prime(n)]
+    return [n for n in numbers if sort_prime(n)]
 
 print(filter_prime(map(int, input().split())))
 
