@@ -10,8 +10,6 @@ def all_permutatons(str, fix = ''):
         cur = str[let]
         rem = str[:let] + str[let+1:]
         all_permutatons(rem, fix+cur)
-        
-
 
 str = input("enter the string: ")
 print("all permutations: ")
